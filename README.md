@@ -1,29 +1,5 @@
-# README #
+# angular-bootstrap-courses #
+Pequeña aplicación web que simula el proceso de inscripción de alumnos a los cursos de una escuela.
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+IF Request header field X-XSRF-TOKEN is not allowed by Access-Control-Allow-Headers in preflight response. / delete cookies field (X-XSRF-TOKEN)  
