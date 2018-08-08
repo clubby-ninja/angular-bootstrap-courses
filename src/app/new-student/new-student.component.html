@@ -1,0 +1,73 @@
+  <div class="container scroll-y">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-10 offset-md-2 offset-lg-2 offset-sm-2">
+        <form (ngSubmit)="onSubmit($event, student)" *ngIf="!isAddToCourse">
+          <h3 class="text-center">Detalles de alumno </h3>
+
+          <div class="input-group mb-3">
+            <input [(ngModel)]="student.first_name" name="first_name" type="text" class="form-control w-100" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1" >
+            <div class="alert alert-danger w-100 small" role="alert" *ngFor="let error of errors.first_name.errors">
+              {{error}}
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input [(ngModel)]="student.last_name" name="last_name" type="text" class="form-control w-100" placeholder="Primer apellido" aria-label="Primer apellido" aria-describedby="basic-addon1">
+              <div class="alert alert-danger w-100 small" role="alert" *ngFor="let error of errors.last_name.errors">
+                {{error}}
+              </div>
+          </div>
+          <div class="input-group mb-3">
+            <input [(ngModel)]="student.last_name_second" name="last_name_second" type="text" class="form-control w-100" placeholder="Segundo apellido" aria-label="Segundo apellido" aria-describedby="basic-addon1">
+            <div class="alert alert-danger w-100 small" role="alert" *ngFor="let error of errors.last_name_second.errors">
+              {{error}}
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input [(ngModel)]="student.email" name="email" type="email" class="form-control w-100" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+            <div class="alert alert-danger w-100 small" role="alert" *ngFor="let error of errors.email.errors">
+              {{error}}
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input [(ngModel)]="student.phone" name="phone" type="phone" class="form-control w-100" placeholder="Teléfono" aria-label="Teléfono" aria-describedby="basic-addon1">
+            <div class="alert alert-danger w-100 small" role="alert" *ngFor="let error of errors.phone.errors">
+              {{error}}
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <label><b>Fecha de nacimiento</b></label>
+            <input [(ngModel)]="student.birth_date" name="birth_date" type="date" class="form-control w-100" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento" aria-describedby="basic-addon1">
+            <div class="alert alert-danger w-100 small" role="alert" *ngFor="let error of errors.birth_date.errors">
+              {{error}}
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <button type="submit" class="btn btn-primary btn-block" id="add-student" >{{isCreate ? 'AGREGAR ALUMNO':'EDITAR ALUMNO'}}</button>
+          </div>
+        </form>
+        <!---        Add To Course    --->
+        <form (ngSubmit)="onSubmit($event, student)" *ngIf="isAddToCourse">
+          <h3 class="text-center">{{course.name}} </h3>
+          <!--<div class="input-group mb-3">
+          <input readonly [(ngModel)]="student.first_name" name="first_name" type="text" class="form-control w-100" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1" >
+        </div>-->
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Selecciona un alumno</label> o <a href="home">da de alta un alumno</a><br>
+          <label><b>Nombre</b></label>
+          <select class="form-control w-100" [(ngModel)]="student" name="student" (ngModelChange)="studentSelected($event)">
+            <option *ngFor="let studentOption of students" [ngValue]="studentOption">{{studentOption.first_name}}</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <label><b>Apellidos</b></label>
+          <input readonly [ngModel]="student.last_name" name="last_name" type="text" class="form-control w-100" aria-label="Primer apellido" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input readonly [ngModel]="student.last_name_second" name="last_name_second" type="text" class="form-control w-100" aria-label="Segundo apellido" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <button type="submit" class="btn btn-primary btn-block" id="add-student" >AGREGAR ALUMNO</button>
+        </div>
+      </form>
+    </div>
+  </div>

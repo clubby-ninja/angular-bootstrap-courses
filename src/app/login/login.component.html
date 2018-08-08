@@ -1,0 +1,23 @@
+<section id="table">
+  <div id="centeralign">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-lg-4 offset-sm-2">
+          <form (ngSubmit)="submit($event, username, password)">
+            <div class="input-group mb-3">
+              <input [(ngModel)]="username" name="username" type="text" class="form-control" placeholder="User" aria-label="User" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <button type="submit" class="btn btn-primary btn-block" id="login" >INICIAR SESIÓN</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

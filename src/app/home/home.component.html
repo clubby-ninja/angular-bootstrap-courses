@@ -1,0 +1,93 @@
+<app-navbar></app-navbar>
+
+<section id="table">
+    <div id="centeralign">
+      <div class="container">
+
+        <!--=====================================================  HERO =====================================================-->
+
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+            <h1 class="text-left">Bienvenido</h1>
+          </div>
+        </div>
+
+        <!--===================================================== ALUMNOS HEADING =====================================================-->
+
+        <div class="row margin-top-28">
+          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+            <div class="row">
+              <div class="col">
+                <h4 class="text-left">Mis Alumnos</h4>
+              </div>
+              <div class="col">
+                <div class="text-right margin-top-4"><a href="" (click)="showStudentDialog($event)" class="small" >Da de alta un alumno</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--===================================================== ALUMNOS CONTENT =====================================================-->
+
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+            <ul *ngIf="students.length > 0">
+              <li *ngFor="let student of students" class="card">
+                <div class="card-body row">
+                  <div class="col">
+                    <h6 class="card-title text-left"><a href="student/{{student.id}}">{{student.first_name?student.first_name:'name'}}</a></h6>
+                  </div>
+                  <div class="col">
+                    <div class="text-right margin-top-6"><a href="#" (click)="showDeleteAlert($event, student.id)" class="card-link small text-danger">Eliminar</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+
+            <div class="card" style="margin-bottom:20px;" *ngIf="students.length == 0">
+              <div class="card-body row">
+                <div class="col">
+                  <p class="card-title text-center text-muted">No hay alumnos inscritos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--===================================================== CURSOS HEADING =====================================================-->
+        <div class="row margin-top-28">
+          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+            <div class="row">
+              <div class="col">
+                <h4 class="text-left">Mis Cursos</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--===================================================== CURSOS CONTENT =====================================================-->
+
+        <div class="row" *ngFor="let course of courses">
+          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+            <ul>
+              <li class="card">
+                <div class="card-body row">
+                  <div class="col">
+                    <h6 class="card-title text-left"><a href="course/{{course.id}}">{{course.name}}</a></h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <!--===================================================== SECTON DIVIDER =====================================================-->
+
+
+      </div>
+    </div>
+</section>
