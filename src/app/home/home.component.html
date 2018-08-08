@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
             <ul *ngIf="students.length > 0">
-              <li *ngFor="let student of students" class="card">
+              <li class="card margin-top-16" *ngFor="let student of students" >
                 <div class="card-body row">
                   <div class="col">
                     <h6 class="card-title text-left"><a href="student/{{student.id}}">{{student.first_name?student.first_name:'name'}}</a></h6>
@@ -45,7 +45,7 @@
             </ul>
 
 
-            <div class="card" style="margin-bottom:20px;" *ngIf="students.length == 0">
+            <div class="card" *ngIf="students.length == 0">
               <div class="card-body row">
                 <div class="col">
                   <p class="card-title text-center text-muted">No hay alumnos inscritos</p>
@@ -69,10 +69,10 @@
 
         <!--===================================================== CURSOS CONTENT =====================================================-->
 
-        <div class="row" *ngFor="let course of courses">
+        <div class="row">
           <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
-            <ul>
-              <li class="card">
+            <ul *ngFor="let course of courses">
+              <li class="card margin-top-16">
                 <div class="card-body row">
                   <div class="col">
                     <h6 class="card-title text-left"><a href="course/{{course.id}}">{{course.name}}</a></h6>
