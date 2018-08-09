@@ -1,106 +1,105 @@
 <app-navbar></app-navbar>
 
 <section id="table">
-    <div id="centeralign">
-      <div class="container">
+  <div id="centeralign">
+    <div class="container">
 
 
-        <!--===================================================== ALUMNO HEADING =====================================================-->
+      <!--===================================================== ALUMNO HEADING =====================================================-->
 
-        <div class="row">
-          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
-            <div class="row">
-              <div class="col">
-                <h2 class="text-left">Detalle de alumno</h2>
-              </div>
-              <div class="col">
-                <div class="text-right margin-top-12"><a class="small" href="" (click)="showStudentDialog($event, student)">Modificar detalles</a></div>
-              </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+          <div class="row">
+            <div class="col">
+              <h2 class="text-left">Detalle de alumno</h2>
+            </div>
+            <div class="col">
+              <div class="text-right margin-top-12"><a class="small" href="" (click)="showStudentDialog($event, student)">Modificar detalles</a></div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!--===================================================== ALUMNOS CONTENT =====================================================-->
+      <!--===================================================== ALUMNOS CONTENT =====================================================-->
 
-        <div class="row">
-          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
-              <div class="card">
-                <div class="card-body">
-                  <!--===================================================== NAME =====================================================-->
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+            <div class="card">
+              <div class="card-body">
+                <!--===================================================== NAME =====================================================-->
 
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                      <h6 class="card-title text-left">Nombre</h6>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                      <h6 class="card-title text-left medium text-secondary">{{student?student.first_name:'first_name'}}</h6>
-                    </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h6 class="card-title text-left">Nombre</h6>
                   </div>
-                  <!--===================================================== LAST =====================================================-->
-
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                      <h6 class="card-title text-left">Primer Apellido</h6>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                      <h6 class="card-title text-left medium text-secondary">{{student?student.last_name:'last name'}}</h6>
-                    </div>
+                  <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+                    <h6 class="card-title text-left medium text-secondary">{{student?student.first_name:'first_name'}}</h6>
                   </div>
-                  <!--===================================================== LAST SECOND =====================================================-->
-
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                      <h6 class="card-title text-left">Segundo Apellido</h6>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                      <h6 class="card-title text-left medium text-secondary">{{student?student.last_name_second:'second'}}</h6>
-                    </div>
-                  </div>
-                  <!--===================================================== MAIL =====================================================-->
-
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                      <h6 class="card-title text-left">Email</h6>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                      <h6 class="card-title text-left medium text-secondary">{{student?student.email:'email'}}</h6>
-                    </div>
-                  </div>
-                  <!--===================================================== PHONE =====================================================-->
-
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                      <h6 class="card-title text-left">Teléfono</h6>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                      <h6 class="card-title text-left medium text-secondary">{{student?student.phone:'phone'}}</h6>
-                    </div>
-                  </div>
-                  <!--===================================================== BIRTH DATE =====================================================-->
-
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-5">
-                      <h6 class="card-title text-left">Fecha de Nacimiento</h6>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                      <h6 class="card-title text-left medium text-secondary">{{student?student.birth_date:'birth date'}}</h6>
-                    </div>
-                  </div>
-
-                  <!--===================================================== CARD CONTENT ENDS =====================================================-->
-
                 </div>
+                <!--===================================================== LAST =====================================================-->
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h6 class="card-title text-left">Primer Apellido</h6>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+                    <h6 class="card-title text-left medium text-secondary">{{student?student.last_name:'last name'}}</h6>
+                  </div>
+                </div>
+                <!--===================================================== LAST SECOND =====================================================-->
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h6 class="card-title text-left">Segundo Apellido</h6>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+                    <h6 class="card-title text-left medium text-secondary">{{student?student.last_name_second:'second'}}</h6>
+                  </div>
+                </div>
+                <!--===================================================== MAIL =====================================================-->
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h6 class="card-title text-left">Email</h6>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+                    <h6 class="card-title text-left medium text-secondary">{{student?student.email:'email'}}</h6>
+                  </div>
+                </div>
+                <!--===================================================== PHONE =====================================================-->
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h6 class="card-title text-left">Teléfono</h6>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+                    <h6 class="card-title text-left medium text-secondary">{{student?student.phone:'phone'}}</h6>
+                  </div>
+                </div>
+                <!--===================================================== BIRTH DATE =====================================================-->
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-5">
+                    <h6 class="card-title text-left">Fecha de Nacimiento</h6>
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+                    <h6 class="card-title text-left medium text-secondary">{{student?student.birth_date:'birth date'}}</h6>
+                  </div>
+                </div>
+
+                <!--===================================================== CARD CONTENT ENDS =====================================================-->
+
               </div>
-              <!--===================================================== CARD ENDS =====================================================-->
+            </div>
+            <!--===================================================== CARD ENDS =====================================================-->
 
-              <div class="text-right margin-top-10"><a href="#" (click)="showDeleteAlert($event, student.id)" class="card-link small text-danger">Eliminar Alumno</a></div>
+            <div class="text-right margin-top-10"><a href="#" (click)="showDeleteAlert($event, student.id)" class="card-link small text-danger">Eliminar Alumno</a></div>
 
-          </div>
         </div>
-
-
-
-
       </div>
     </div>
+  </div>
 </section>
+<!--=====================================================  END =====================================================-->
+
+<app-footer></app-footer>

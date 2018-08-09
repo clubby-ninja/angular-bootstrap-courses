@@ -2,153 +2,145 @@
 
 <section class="container">
 
+  <!--=====================================================  HEADING =====================================================-->
 
-      <!--=====================================================  HEADING =====================================================-->
-
+  <div class="row">
+    <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
       <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+        <div class="col">
+          <h2 class="text-left">Detalle de Curso</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--=====================================================  CONTENT =====================================================-->
+
+  <div class="row">
+    <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+      <div class="card">
+        <div class="card-body">
+          <!--===================================================== COURSE NAME =====================================================-->
+
           <div class="row">
-            <div class="col">
-              <h2 class="text-left">Detalle de Curso</h2>
+            <div class="col-lg-4 col-md-4 col-sm-5">
+              <h6 class="card-title text-left">Curso</h6>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+              <h4 class="card-title text-left medium text-secondary small">{{course?course.name:'name'}}</h4>
             </div>
           </div>
+          <!--===================================================== TEACHER =====================================================-->
+
+
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-5">
+              <h6 class="card-title text-left">Profesor</h6>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+              <h4 class="card-title text-left medium text-secondary small">{{course?course.teacher:'teacher'}}</h4>
+            </div>
+          </div>
+          <!--===================================================== CLASSROOM =====================================================-->
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-5">
+              <h6 class="card-title text-left">Aula</h6>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+              <h4 class="card-title text-left medium text-secondary small">{{course?course.classroom:'classroom'}}</h4>
+            </div>
+          </div>
+          <!--===================================================== Horas =====================================================-->
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-5">
+              <h6 class="card-title text-left">Horas</h6>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+              <h4 class="card-title text-left medium text-secondary small">{{course?course.hours:'name'}}</h4>
+            </div>
+          </div>
+          <!--===================================================== BEGIN DATE =====================================================-->
+
+
+
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-5">
+              <h6 class="card-title text-left">Inicio del curso</h6>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+              <h4 class="card-title text-left medium text-secondary small">{{course?course.date_init:'date'}}</h4>
+            </div>
+          </div>
+          <!--===================================================== END DATE =====================================================-->
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-5">
+              <h6 class="card-title text-left">Fin del curso</h6>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
+              <h4 class="card-title text-left medium text-secondary small">{{course?course.date_end:'date'}}</h4>
+            </div>
+          </div>
+
+          <!--===================================================== CARD CONTENT ENDS =====================================================-->
+
         </div>
       </div>
+      <!--===================================================== CARD ENDS =====================================================-->
+
+    </div>
+
+  </div>
 
 
+  <!--===================================================== ALUMNOS HEADING =====================================================-->
 
-      <!--=====================================================  CONTENT =====================================================-->
-
+  <div class="row margin-top-28">
+    <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
       <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
-          <div class="card">
-            <div class="card-body">
-              <!--===================================================== COURSE NAME =====================================================-->
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-5">
-                  <h6 class="card-title text-left">Curso</h6>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                  <h4 class="card-title text-left medium text-secondary small">{{course?course.name:'name'}}</h4>
-                </div>
-              </div>
-              <!--===================================================== TEACHER =====================================================-->
-
-
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-5">
-                  <h6 class="card-title text-left">Profesor</h6>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                  <h4 class="card-title text-left medium text-secondary small">{{course?course.teacher:'teacher'}}</h4>
-                </div>
-              </div>
-              <!--===================================================== CLASSROOM =====================================================-->
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-5">
-                  <h6 class="card-title text-left">Aula</h6>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                  <h4 class="card-title text-left medium text-secondary small">{{course?course.classroom:'classroom'}}</h4>
-                </div>
-              </div>
-              <!--===================================================== Horas =====================================================-->
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-5">
-                  <h6 class="card-title text-left">Horas</h6>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                  <h4 class="card-title text-left medium text-secondary small">{{course?course.hours:'name'}}</h4>
-                </div>
-              </div>
-              <!--===================================================== BEGIN DATE =====================================================-->
-
-
-
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-5">
-                  <h6 class="card-title text-left">Inicio del curso</h6>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                  <h4 class="card-title text-left medium text-secondary small">{{course?course.date_init:'date'}}</h4>
-                </div>
-              </div>
-              <!--===================================================== END DATE =====================================================-->
-
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-5">
-                  <h6 class="card-title text-left">Fin del curso</h6>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1">
-                  <h4 class="card-title text-left medium text-secondary small">{{course?course.date_end:'date'}}</h4>
-                </div>
-              </div>
-
-              <!--===================================================== CARD CONTENT ENDS =====================================================-->
-
-            </div>
-          </div>
-          <!--===================================================== CARD ENDS =====================================================-->
-
+        <div class="col">
+          <h2 class="text-left">Alumnos en curso</h2>
         </div>
-
+        <div class="col">
+          <div class="text-right margin-top-12"><a href="" (click)="showStudentDialog($event, course)" class="" >Agrega un alumno a este curso</a></div>
+        </div>
       </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-        <!--===================================================== ALUMNOS HEADING =====================================================-->
-
-        <div class="row margin-top-28">
-          <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
-            <div class="row">
-              <div class="col">
-                <h2 class="text-left">Alumnos en curso</h2>
-              </div>
-              <div class="col">
-                <div class="text-right margin-top-12"><a href="" (click)="showStudentDialog($event, course)" class="" >Agrega un alumno a este curso</a></div>
-              </div>
+  <!--===================================================== ALUMNOS CONTENT =====================================================-->
+  <div class="row"  >
+    <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
+      <ul *ngIf="course && course.students && course.students.length > 0">
+        <li class="card" *ngFor="let student of course.students">
+          <div class="card-body row">
+            <div class="col">
+              <h6 class="card-title text-left"><a href="student/{{student.id}}">{{student.first_name?student.first_name:'name'}}</a></h6>
             </div>
+            <!--
+            <div class="col">
+              <div class="text-right"><a href="#" (click)="showDeleteAlert($event, student.id)" class="card-link small text-danger">Eliminar</a></div>
+            </div>
+            -->
+          </div>
+        </li>
+      </ul>
+
+
+      <div class="card" style="margin-bottom:20px;" *ngIf="course && course.students.length == 0">
+        <div class="card-body row">
+          <div class="col">
+            <p class="card-title text-center text-muted">No hay alumnos inscritos en este curso</p>
           </div>
         </div>
-
-        <!--===================================================== ALUMNOS CONTENT =====================================================-->
-          <div class="row"  >
-            <div class="col-lg-8 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1">
-              <ul *ngIf="course && course.students && course.students.length > 0">
-                <li class="card" *ngFor="let student of course.students">
-                  <div class="card-body row">
-                    <div class="col">
-                      <h6 class="card-title text-left"><a href="student/{{student.id}}">{{student.first_name?student.first_name:'name'}}</a></h6>
-                    </div>
-                    <!--
-                    <div class="col">
-                      <div class="text-right"><a href="#" (click)="showDeleteAlert($event, student.id)" class="card-link small text-danger">Eliminar</a></div>
-                    </div>
-                    -->
-                  </div>
-                </li>
-              </ul>
-
-
-              <div class="card" style="margin-bottom:20px;" *ngIf="course && course.students.length == 0">
-                <div class="card-body row">
-                  <div class="col">
-                    <p class="card-title text-center text-muted">No hay alumnos inscritos en este curso</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+      </div>
+    </div>
+  </div>
 </section>
+<!--===================================================== END =====================================================-->
+
+<app-footer></app-footer>
